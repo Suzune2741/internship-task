@@ -3,17 +3,13 @@
 - pnpm
 ### インストール
 ```bash
-pnpm add -D typescript @types/node
-```
-### コンパイルしたファイルを置くディレクトリを作成
-```bash
-mkdir dist
+pnpm install
 ```
 ### コンパイル
 ```bash
-pnpm tsc
+pnpm run tsc
 ```
 ### 実行
 ```bash
-node .\dist\task.js
+pnpm run execute
 ```

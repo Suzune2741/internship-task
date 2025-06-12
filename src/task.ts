@@ -11,13 +11,11 @@ const isValid = (s: string) => {
     if (front[c]) {
       //開き括弧ならstackに積む
       stack.push(c);
-    }else
-    {
+    } else {
       //そうでなければstackからpop
       const before = stack.pop();
       //関係づけられている括弧と一致しているか確認
-      if(front[before!] !== c)
-        return false;
+      if (front[before!] !== c) return false;
     }
   }
   return true;

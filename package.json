@@ -2,5 +2,9 @@
 	"devDependencies": {
 		"typescript": "^5.8.3",
 		"@types/node": "^24.0.1"
+	},
+	"scripts": {
+		"build": "tsc",
+		"execute":"node ./dist/task.js"
 	}
 }
